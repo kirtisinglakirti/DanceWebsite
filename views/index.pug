@@ -1,0 +1,61 @@
+//- in pug there are indends and js functions 
+doctype html 
+html 
+    head 
+        title Pooja Dance Academy
+        style 
+            include ../static/style.css
+    body 
+        nav#navbar
+            ul
+                div#logo 
+                    img(src="/static/img/logo.jpg")
+                    | PDA
+                li #[a(href="/") Home ]
+                li #[a(href="/") About ]
+                li #[a(href="/") Contact Us ]
+                li #[a(href="/") Services ]
+                li #[a(href="/") Class Info]
+
+        //- semantic tag-header,nav,footer,section,article,aside
+        section#introSection 
+            div  Welcome To Pooja's Dance Academy 
+            div.small  Eat Sleep Dance Repeat 
+
+        section#missionSection 
+            h2 Our Mission  
+            div.card
+                h1 Dance Perfection
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/img/g1.jpg")
+                    
+                    div.card-content 
+                        p This is the best dance academy of the universe 
+
+            div.card
+                h1 Dance The Way You Like
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/img/g2.jpg")
+                    
+                    div.card-content 
+                        p This is the best dance academy of the universe
+            div.card
+                h1 Expert Teaching
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/img/g3.jpg")
+                    
+                    div.card-content 
+                        p This is the best dance academy of the universe
+        section#sponsorSection 
+            h2 Our Sponsors 
+            div#sponsers 
+                img(src="/static/img/a.png", alt="sponser image", class="spImage")      
+                img(src="/static/img/i.jpg", alt="sponser image", class="spImage")      
+                img(src="/static/img/g.jpg", alt="sponser image", class="spImage")      
+        footer#footer 
+            | Copyright 2019 Pooja Dance Academy | All Right Reserved    
+        script 
+            include ../static/index.js

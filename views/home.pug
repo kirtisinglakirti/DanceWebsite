@@ -1,0 +1,51 @@
+extends base.pug 
+
+block scripts 
+  script(src='/static/index.js')
+
+block style 
+    style 
+      include ../static/style.css 
+
+block content
+        //- semantic tag-header,nav,footer,section,article,aside
+        section#introSection 
+            div  Welcome To Pooja's Dance Academy 
+            div.small  Eat Sleep Dance Repeat 
+
+        section#missionSection 
+            h2 Our Mission  
+            div.card
+                h1 Dance Perfection
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/img/g1.jpg")
+                    
+                    div.card-content 
+                        p This is the best dance academy of the universe 
+
+            div.card
+                h1 Dance The Way You Like
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/img/g2.jpg")
+                    
+                    div.card-content 
+                        p This is the best dance academy of the universe
+            div.card
+                h1 Expert Teaching
+                div.card-box 
+                    div.card-img 
+                        img(src="/static/img/g3.jpg")
+                    
+                    div.card-content 
+                        p This is the best dance academy of the universe
+        section#sponsorSection 
+            h2 Our Sponsors 
+            div#sponsers 
+                img(src="/static/img/a.png", alt="sponser image", class="spImage")      
+                img(src="/static/img/i.jpg", alt="sponser image", class="spImage")      
+                img(src="/static/img/g.jpg", alt="sponser image", class="spImage")  
+                               
+        script 
+            include ../static/index.js    
